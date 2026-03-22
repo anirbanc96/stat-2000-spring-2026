@@ -5,9 +5,10 @@ nav_order: 5
 
 # Homework Submission via Gradescope
 
-We only accept online submissions of homework on Gradescope. You will upload your PDF to the following **Gradescope** link.
+We only accept online submissions of homework via Gradescope. Click the button below to upload your PDF:
 
-* [Access Gradescope Here](https://www.gradescope.com/courses/1284418): https://www.gradescope.com/courses/1284418
+{: .btn .btn-blue }
+[Submit via Gradescope](https://www.gradescope.com/courses/1284418)
 
 ### Submission Guidelines
 
