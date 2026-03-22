@@ -5,7 +5,7 @@ permalink: index.html
 nav_order: 1
 ---
 
-# STAT 20000 (Winter 2026)
+# STAT 20000: Elementary Statistics (Winter 2026)
 
 ## Course Schedule
 
