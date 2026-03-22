@@ -1,5 +1,5 @@
 ---
 title: Syllabus
-redirect_to: ./assets/course-materials/Syllabus/syllabus.pdf
+redirect_to: ./assets/course-materials/syllabus/syllabus.pdf
 nav_order: 2
 ---
