@@ -1,0 +1,779 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  ignorenonframetext, 10pt
+]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+%\usetheme{metropolis}
+
+
+%\setbeamercolor{normal text}{bg=white}
+%\addtobeamertemplate{frametitle}{}{\vspace{-0.5em}} % decrease
+%\setbeamersize{text margin left=5mm,text margin right=10mm}
+%\usefonttheme[onlymath]{serif}
+%\usefonttheme{professionalfonts}
+%%%%%%%%%%%%%%%%
+% Packages
+%%%%%%%%%%%%%%%%
+
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsopn}
+\usepackage{cancel}
+\usepackage{epstopdf}
+\usepackage{amsmath}  	% this permits text in eqnarray among other benefits
+\usepackage{url}		% produces hyperlinks
+\usepackage{hyperref}	% allows for color usage in tables
+\usepackage[english]{babel}
+%\usepackage[latin1]{inputenc}
+\usepackage{colortbl}	% allows for color usage in tables
+\usepackage{multirow}	% allows for rows that span multiple rows in tables
+\usepackage{color}		% this package has a variety of color options
+\usepackage{xcolor}
+\usepackage{pgf}
+\usepackage{calc}
+\usepackage{ulem}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{textcomp}
+%\usepackage[misc]{ifsym} % for the dice symbol \Cube{}
+%\usepackage{txfonts}
+%\usepackage{listings}
+%\usepackage{tikz}
+\usepackage{array}
+\usepackage{wasysym}
+\usepackage{fancyvrb}
+
+%% change fontsize of R code
+\ifdefined\Shaded
+\let\oldShaded\Shaded
+\let\endoldShaded\endShaded
+\renewenvironment{Shaded}{\footnotesize\oldShaded}{\endoldShaded}
+\fi
+%% change fontsize of output
+\let\oldverbatim\verbatim
+\let\endoldverbatim\endverbatim
+\renewenvironment{verbatim}{\footnotesize\oldverbatim}{\endoldverbatim}
+
+%%%%%%%%%%%%%%%%
+% Remove navigation symbols
+%%%%%%%%%%%%%%%%
+
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{footline}[frame number]
+
+%%%%%%%%%%%%%%%%
+% User defined colors
+%%%%%%%%%%%%%%%%
+
+\xdefinecolor{oiB}{rgb}{0.22,0.52,0.72}
+\definecolor{oiG}{rgb}{.298,.447,.114}
+\xdefinecolor{hlblue}{rgb}{0.051,0.65,1}
+\xdefinecolor{gray}{rgb}{0.5, 0.5, 0.5}
+\xdefinecolor{darkGray}{rgb}{0.3, 0.3, 0.3}
+\xdefinecolor{darkerGray}{rgb}{0.2, 0.2, 0.2}
+\xdefinecolor{rubineRed}{rgb}{0.89,0,0.30}
+\xdefinecolor{irishGreen}{rgb}{0,0.60,0}	
+\definecolor{lightGreen}{rgb}{0.387,0.581,0.148}
+
+%%%%%%%%%%%%%%%%
+% Template colors
+%%%%%%%%%%%%%%%%
+
+%\setbeamercolor*{palette primary}{fg=white,bg= oiB!80!black!90}
+%\setbeamercolor*{palette secondary}{fg=black,bg= oiB!80!black}
+%\setbeamercolor*{palette tertiary}{fg=white,bg= oiB!80!black!80}
+%\setbeamercolor*{palette quaternary}{fg=white,bg= oiB}
+%\setbeamercolor{structure}{fg= oiB}
+%\setbeamercolor{frametitle}{bg= oiB!90}
+%\setbeamertemplate{blocks}[shadow=false]
+%\setbeamersize{text margin left=2em,text margin right=2em}
+
+%\setbeamercolor{code body}{bg=gray!20!white!80,fg=black}
+
+
+%%%%%%%%%%%%%%%%
+% Get rid of fancy enumerated list bullets
+%%%%%%%%%%%%%%%%
+
+%\setbeamertemplate{enumerate items}[default]
+
+%%%%%%%%%%%%%%%%
+% Custom commands
+%%%%%%%%%%%%%%%%
+
+\newcommand{\Sum}{\sum\nolimits}
+\newcommand{\Hide}[2]{\underline{~~~\onslide<#1>{\alert{#2}}~~~}}
+\newcommand{\hide}[2]{\underline{~~\onslide<#1>{\alert{#2}}~~}}
+\newcommand{\hid}[2]{\onslide<#1>{\alert{#2}}}
+\newcommand{\code}[1]{\textcolor{blue}{\texttt{#1}}}
+
+% red
+\newcommand{\red}[1]{\textit{\textcolor{rubineRed}{#1}}}
+
+% pink
+\newcommand{\pink}[1]{\textit{\textcolor{rubineRed!90!white!50}{#1}}}
+
+% green
+\newcommand{\green}[1]{\textit{\textcolor{irishGreen}{#1}}}
+
+% orange
+\newcommand{\orange}[1]{\textit{\textcolor{orange}{#1}}}
+
+% links: webURL, webLin, appLink
+\newcommand{\webURL}[1]{\urlstyle{same}{ \textit{\textcolor{darkGray}{\url{#1}}}}}
+\newcommand{\webLink}[2]{\href{#1}{\textcolor{darkGray}{{#2}}}}
+\newcommand{\appLink}[2]{\href{#1}{\textcolor{white}{{#2}}}}
+
+% mail
+\newcommand{\mail}[1]{\href{mailto:#1}{\textit{\textcolor{darkGray}{#1}}}}
+
+% highlighting: hl, hlGr, mathhl
+\newcommand{\hl}[1]{\textit{\textcolor{hlblue}{#1}}}
+\newcommand{\hlGr}[1]{\textit{\textcolor{lightGreen}{#1}}}
+\newcommand{\mathhl}[1]{\textcolor{hlblue}{\ensuremath{#1}}}
+
+% two col: two columns
+\newenvironment{twocol}[4]{
+\begin{columns}[c]
+\column{#1\textwidth}
+#3
+\column{#2\textwidth}
+#4
+\end{columns}
+}
+
+
+
+
+
+%%%%%%%%%%%%%%%%
+% Change margin
+%%%%%%%%%%%%%%%%
+
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{\parskip}%
+}%
+\item}{\end{list}}
+
+%%%%%%%%%%%%%%%%
+% Footnote
+%%%%%%%%%%%%%%%%
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+%%%%%%%%%%%%%%%%
+% Graphics
+%%%%%%%%%%%%%%%%
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+
+
+\setbeamercolor{normal text}{bg=white}
+
+\DeclareMathOperator{\var}{var}
+\newcommand{\boxmodel}[1]{\begin{array}{|c|}#1\\[2pt]\hline\end{array}}
+\newcommand{\BXX}[2]{\begin{array}{|@{\,}c@{\,}|@{\,}c@{\,}|}\hline#1&#2\\[-1pt]\hline\end{array}}
+\newcommand{\p}{\mathrm{P}}
+\newcommand{\SE}{\mathrm{SE}}
+\newcommand{\xbar}{\overline{x}}
+\newcommand{\Xbar}{\overline{X}}
+\newcommand{\ybar}{\overline{y}}
+\newcommand{\Ybar}{\overline{Y}}
+\newcommand{\zbar}{\overline{z}}
+\newcommand{\Zbar}{\overline{Z}}
+\newcommand{\wbar}{\overline{w}}
+\newcommand{\Wbar}{\overline{W}}
+\newcommand{\vbar}{\overline{v}}
+\newcommand{\Vbar}{\overline{V}}
+\newcommand{\dbar}{\overline{d}}
+\newcommand{\Dbar}{\overline{D}}
+\newcommand{\ebar}{\overline{e}}
+\newcommand{\ehat}{\widehat{\epsilon}}
+\newcommand{\yhat}{\widehat{y}}
+\newcommand{\Yhat}{\widehat{Y}}
+\newcommand{\bhat}{\widehat{\beta}}
+\newcommand{\dl}[1]{\widehat{\delta}_{#1}}
+\newcommand{\g}[1]{\widehat{\gamma}_{#1}}
+\newcommand{\al}[1]{\widehat{\alpha}_{#1}}
+\newcommand{\Bj}{{\beta_j}}
+\newcommand{\Bp}{{\beta_p}}
+\newcommand{\Bq}{{\beta_q}}
+\renewcommand{\b}[1]{\widehat{\beta}_{#1}}
+\newcommand{\B}[1]{{\beta}_{#1}}
+\newcommand{\BETA}{{\boldsymbol\beta}}
+\newcommand{\bp}{\widehat{\beta}_p}
+\newcommand{\bq}{\widehat{\beta}_q}
+\newcommand{\bj}{\widehat{\beta}_j}
+\newcommand{\df}{\mathrm{df}}
+\DeclareMathOperator{\VIF}{VIF}
+\DeclareMathOperator{\SSE}{SSE}
+\DeclareMathOperator{\SST}{SST}
+\DeclareMathOperator{\SSR}{SSR}
+\DeclareMathOperator{\MSE}{MSE}
+\DeclareMathOperator{\MST}{MST}
+\DeclareMathOperator{\MSR}{MSR}
+\DeclareMathOperator{\RM}{RM}
+\DeclareMathOperator{\FM}{FM}
+\DeclareMathOperator{\E}{E}
+\DeclareMathOperator{\SD}{SD}
+\DeclareMathOperator{\se}{se}
+\DeclareMathOperator{\cov}{Cov}
+\DeclareMathOperator{\corr}{Corr}
+\DeclareMathOperator{\cor}{Cor}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\logit}{logit}
+\newcommand{\hsigma}{\widehat{\sigma}}
+\newcommand{\betahat}{\widehat{\beta}}
+\newcommand{\slide}{<br><br><br><br><br>}
+\newcommand{\bbeta}{\boldsymbol{\beta}}
+\newcommand{\bX}{\mathbf{X}}
+\newcommand{\bY}{\mathbf{Y}}
+\newcommand{\bH}{\mathbf{H}}
+\newcommand{\bI}{\mathbf{I}}
+\newcommand{\be}{\mathbf{e}}
+\newcommand{\pval}{\mathit{P}\mathrm{-val}}
+
+
+
+\newcommand{\vmu}{\mbox{\boldmath{$\mu$}}}
+\newcommand{\vR}{\mbox{\boldmath{$R$}}}
+\newcommand{\vpsi}{\mbox{\boldmath{$\psi$}}}
+\newcommand{\vZ}{\mbox{\boldmath{$Z$}}}
+\newcommand{\vX}{\mbox{\boldmath{$X$}}}
+\newcommand{\vY}{\mbox{\boldmath{$Y$}}}
+\newcommand{\vW}{\mbox{\boldmath{$W$}}}
+\newcommand{\vz}{\mbox{\boldmath{$z$}}}
+\newcommand{\vr}{\mbox{\boldmath{$r$}}}
+\newcommand{\vx}{\mbox{\boldmath{$x$}}}
+\newcommand{\vk}{\mbox{\boldmath{$k$}}}
+\newcommand{\vp}{\mbox{\boldmath{$p$}}}
+\newcommand{\vv}{\mbox{\boldmath{$v$}}}
+\newcommand{\vg}{\mbox{\boldmath{$g$}}}
+\newcommand{\vbeta}{\mbox{\boldmath{$\beta$}}}
+\newcommand{\vone}{\mbox{\boldmath{$1$}}}
+\newcommand{\vep}{\mbox{\boldmath{$\epsilon$}}}
+\newcommand{\veta}{\mbox{\boldmath{$\eta$}}}
+\newcommand{\vl}{\mbox{\boldmath{$l$}}}
+\newcommand{\ve}{\mbox{\boldmath{$e$}}}
+\newcommand{\va}{\mbox{\boldmath{$a$}}}
+\newcommand{\vb}{\mbox{\boldmath{$b$}}}
+\newcommand{\vPsi}{\mbox{\boldmath{$\Psi$}}}
+\DeclareMathOperator*{\V}{\mathbb{V}}
+
+
+% geometry: topsep=0pt 
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Chapter 1: Controlled Experiments},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Chapter 1: Controlled Experiments}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}{}
+\protect\hypertarget{section}{}
+\underline{General Question}: How to test whether or not a new drug, for
+example, a new vaccine, is effective?
+
+\emph{Ask the class in small groups to come up with answers to this.}
+\bigskip
+\pause
+Basic method: \textbf{Comparison}
+
+\begin{itemize}
+\tightlist
+\item
+  Divide people (subjects) into two groups;
+\item
+  Give the vaccine to one group (\red{treatment group}) and not to the
+  other one (\red{control group});
+\item
+  Compare the responses (e.g.~the percentage of subjects getting the
+  disease) in each group.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    If the percentage is lower in the treatment group, then the vaccine
+    is effective; otherwise not effective.
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Example: Polio Vaccine (FPP)}
+\protect\hypertarget{example-polio-vaccine-fpp}{}
+\begin{tabular}{@{}ll}
+ Polio & - contagious and mostly a child disease \\
+ & - major epidemic hit U.S. in 1916 \\
+ Vaccine & - developed by Salk (1950s)
+ \end{tabular}
+ \vspace{0.17in}
+
+\underline{Question}: How to test its effectiveness? \vspace{0.07in}
+\pause
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Idea \#1:} vaccinate every child, see if polio incidence
+  declines
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Issue:} Incidence fluctuates year to year.\pause
+  \end{itemize}
+\item
+  \textbf{Idea \#2: } use comparison method and leave some children
+  unvaccinated as a control\pause
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Issue:} Is this ethical?
+  \item
+    \textbf{Issue:} How to choose which children are vaccinated?\pause
+  \end{itemize}
+\item
+  \textbf{Idea \#3:} use comparison method and vaccinate every child
+  whose parents consent\pause
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Issue:} ?
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Example: Polio Vaccine (First Experiment)}
+\protect\hypertarget{example-polio-vaccine-first-experiment}{}
+NFIP divided the subjects by school grade. \newline NFIP vaccinated all
+grade 2 children whose parents consented.
+
+\begin{itemize}
+\tightlist
+\item
+  Control: Grades 1 \& 3;
+\item
+  Treatment: Grade 2
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{lcccc}
+  &Grade & Size & Number   & Rate\\[-3pt]
+  &      &      & Infected & \footnotesize (per 100,000)\\
+\midrule
+Treatment  &  2      & 225,000 & ~56 & 25\\
+Control    &  1 \& 3 & 725,000 & 392 & 54\\
+Not consent&  2      & 125,000 & ~55 & 44
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-1}{}
+Should we
+
+\begin{itemize}
+\tightlist
+\item
+  compare Treatment v.s Control?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    why comparing rates, not counts?
+  \item
+    other issue?
+  \end{itemize}
+\item
+  compare Treatment (Consent) v.s. (Not Consent)?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Why Compare the \textbf{Rates}?}
+\protect\hypertarget{why-compare-the}{}
+In the U.S., the number of deaths from all causes is
+
+\begin{itemize}
+\tightlist
+\item
+  2.1 million in 1990;
+\item
+  1.7 million in 1960
+\end{itemize}
+
+nearly a 25\% increase.
+
+\begin{block}{True or false, and why:}
+The data show that the public's health got worse over
+the period 1960-1990. (The population in 1960 was about 180 million,
+in 1990 about 248 million)
+\end{block}
+\pause
+\structure{False. The population got bigger too.\\
+Death rate in 1960 $=1.7/180\times 100\%=0.94\%$\\
+Death rate in 1990 $=2.1/248\times 100\%=0.85\%$\\
+The death rate actually dropped over the period 1960-1990.
+}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-2}{}
+Why is it important that the treatment group and the control group are
+similar? \bigskip\pause
+
+\underline{Key to the comparison method}:
+
+The two groups should be similar, and the only difference should be:
+\textbf{treated or not} \bigskip\pause
+
+Some \textbf{bad} ideas on how to divide subjects:
+
+\begin{itemize}
+\tightlist
+\item
+  by health, wealth, or gender;
+\item
+  by age, or school grade;
+\item
+  by volunteers/non-volunteers;
+\end{itemize}
+
+\bigskip
+
+\pause
+
+\begin{block}{Definition: Confounders/Confounding Variables}
+Factors that can also explain the difference in the outcomes
+of the treatment group and the control group
+\end{block}
+\end{frame}
+
+\begin{frame}{Polio Vaccine: Volunteers/Non-Volunteers}
+\protect\hypertarget{polio-vaccine-volunteersnon-volunteers}{}
+\begin{itemize}
+\tightlist
+\item
+  Need parents' permission to vaccinate their kids
+\item
+  If treatment = volunteers, control = non-volunteers,
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Higher income parents would more likely consent to vaccinating their
+    child;
+  \item
+    Higher income \(\rightarrow\) more hygenic environment
+    \(\rightarrow\) less chance to contract mild cases of polio early in
+    childhood \(\rightarrow\) less chance to develop antibodies to
+    polio;
+  \item
+    So, volunteers tend to be more vulnerable to polio;
+  \item
+    The results will be \textbf{biased against} the new vaccine;
+  \end{itemize}
+\item
+  The effect of being a volunteer/non-volunteer will be
+  \textbf{confounded} with the effect of the treatment.
+\item
+  Conclusion: To avoid \textbf{confounding}, \red{both} the treatment
+  group and control group must be chosen from volunteers;
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Possible Strategies to Deal with Confounders}
+\protect\hypertarget{possible-strategies-to-deal-with-confounders}{}
+For example, \textbf{age} is confounded with the effect of the vaccine:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{restrict} the confounder (e.g.~study only 6-yr-old kids)
+\item
+  \textbf{control for} the confounder (e.g.~conduct separate experiments
+  for each age group)
+\item
+  \textbf{balance} (e.g.~make the age compositions in the treatment and
+  control group similar) \bigskip\pause
+\end{itemize}
+
+A simple way to ensure balance: \red{Randomization},\newline which means
+assigning subjects to the two groups \red{randomly}.
+
+\begin{itemize}
+\tightlist
+\item
+  Randomly \(\neq\) Haphazardly
+\item
+  Avoid the human factor: use coin tossing/random number generation.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Example: Polio Vaccine (Randomized Experiment)}
+\protect\hypertarget{example-polio-vaccine-randomized-experiment}{}
+\begin{itemize}
+\tightlist
+\item
+  Of the children whose parents consented to vaccination, half were
+  randomly assigned to the control group and the other half to the
+  treatment group.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Hence this is a \textbf{randomized controlled} experiment.
+  \end{itemize}
+\item
+  \textbf{Blinding}: The children in the control group were given a
+  \textbf{placebo}.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Ensures response is to the vaccine, not the \red{idea} of
+    vaccination.
+  \end{itemize}
+\item
+  Doctors were unaware of which group each child was in.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    This is known as \textbf{double blinding} since neither the child
+    nor the doctor knows whether they got the vaccine or the placebo.
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Blinding \& Placebo}
+\protect\hypertarget{blinding-placebo}{}
+\textbf{Blinding}: Keeping subjects from knowing which group they are
+in: give a ``fake'' treatment (\textbf{placebo}) to the control group.
+
+\begin{itemize}
+\tightlist
+\item
+  Knowing if you are being treated or not might be confounding.
+\item
+  Example: Pain killer
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{c|cc}
+&Study 1 & Study 2  \\[-3pt]
+&(w.~placebo) & (w/o.~placebo)\\
+\hline
+%& Rate &Rate \\
+Treatment & 30\%  & 31\% \\
+Control   & 31\%  & 20\% \\
+\end{tabular}
+\end{center}
+
+Is the drug effective? Which study should we look at?
+\end{frame}
+
+\begin{frame}{Single Blind v.s. Double Blind}
+\protect\hypertarget{single-blind-v.s.-double-blind}{}
+\textbf{Single Blind}: Only the subject are kept from knowing which
+treatment they received.
+
+\textbf{Double Blind}: Neither the subject nor those who evaluate the
+outcome (e.g., diagnosing the disease) know which treatment the subject
+receive
+
+\begin{itemize}
+\tightlist
+\item
+  To avoid the bias in the evaluation, especially in the borderline
+  cases.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Example: Polio Vaccine Results}
+\protect\hypertarget{example-polio-vaccine-results}{}
+\begin{center}
+\underline{Randomized controlled double-blind experiment}\\
+\begin{tabular}{ccc}
+  & Size  & Rate {\scriptsize(per 100,000)} \\
+\makebox[2cm]{Treatment} & \makebox[2cm]{200,000} & \makebox[2cm]{28} \\
+\makebox[2cm]{Control} & \makebox[2cm]{200,000} & \makebox[2cm]{71} \\
+\makebox[2cm]{No consent} & \makebox[2cm]{350,000} & \makebox[2cm]{46}
+\end{tabular}
+\end{center}
+
+\begin{enumerate}
+\item
+  Which pair of rates shows the vaccine is effective?
+
+  \begin{center} (a) 28 and 71 \qquad (b) 28 and 46 \qquad (c) 71 and 46\end{center}
+\item
+  Neither the control group nor the non-consent group got the vaccine,
+  but the no-consent group had a lower rate of polio. Why?
+\item
+  In a badly designed test where all volunteers are assigned to the
+  treatment group, and all non-volunteers are to the control group,
+  which pair of rates are the most likely rates for the two groups?
+
+  \begin{center} (a) 28 and 71 \qquad (b) 28 and 46 \qquad (c) 71 and 46\end{center}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Comparison of the Two Polio Vaccine Experiments}
+\protect\hypertarget{comparison-of-the-two-polio-vaccine-experiments}{}
+\begin{center}
+\tabcolsep=3pt
+\begin{tabular}{lcc||ccc}
+\multicolumn{3}{c||}{Randomized controlled} &\\
+\multicolumn{3}{c||}{double-blind experiment} &
+\multicolumn{3}{c}{NFIP study} \\\hline
+ & Size & Rate &  Grade & Size & Rate \\
+Treatment  & 200,000 & 28 &  2 (vaccine) & 225,000 & 25 \\
+Control    & 200,000 & 71 &  1 \& 3 (control) & 725,000 & 54 \\
+No consent & 350,000 & 46 &  2 (no consent) & 125,000 & 44
+\end{tabular}
+\end{center}
+
+\begin{enumerate}
+\setcounter{enumi}{3}
+\item
+  The two vaccine groups had similar rates of polio, 28 and 25. \newline
+  The two no-consent groups also had similar rates of polio, 46 and
+  44.\newline Why are the rates of polio in the two control groups so
+  different?
+\item
+  In the NFIP study, neither the control group nor the no-consent group
+  got the vaccine. Yet the no-consent group had a lower rate of polio.
+  Why?\medskip
+\item
+  Can one conclude that the vaccine is effective by comparing the 44 in
+  the NFIP study with the 25 in the vaccine group?
+
+  \begin{itemize}
+  \item
+    \uncover<2->{\alert{No! volunteers/non-volunteers comparison}}
+  \end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Historical and Contemporaneous Controls}
+\protect\hypertarget{historical-and-contemporaneous-controls}{}
+\begin{itemize}
+\tightlist
+\item
+  Sometimes randomized controlled experiments are difficult, expensive,
+  or unethical to do.
+\item
+  One commonly used (but poor) alternative is to compare patients using
+  new treatment with \textbf{historical controls}: patients treated in
+  the old way \textbf{in the past}.
+\item
+  In contrast, in randomized controlled experiments, subjects in both
+  groups are chosen from a population at the same time period
+  (\textbf{contemporaneous controls}).
+\item
+  Historical controls may not be reliable because the treatment group
+  and the historical control group may differ in important ways.
+\end{itemize}
+\end{frame}
+
+\end{document}
