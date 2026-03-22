@@ -9,7 +9,7 @@ nav_order: 1
 
 ## Course Schedule
 
-| Week | Date | Chapters | Content | Slides | Assignments |
+| Week | Date | &nbsp;&nbsp;&nbsp;Chapters&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;Content&nbsp;&nbsp;&nbsp; | Slides | Assignments |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **1** | Mon 3/23 | 1. Controlled Experiments | Syllabus; Controlled Experiments | [Lecture 1](./assets/course-materials/Lecture-1/Lecture1.pdf) | -- |
 | | Wed 3/25 | 1. Controlled Experiments; 2. Observational Studies | Placebo Effects & Blinding; Observational Studies | [Lecture 2]() | -- |
