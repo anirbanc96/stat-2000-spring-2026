@@ -13,7 +13,7 @@ We only accept online submissions of homework on Gradescope. You will upload you
 
 * **Tag Your Pages:** After uploading the PDF, Gradescope will prompt you to tag the pages containing your work for each problem. You can tag multiple pages for one problem or one page for multiple problems. 
     * *Note:* Please be sure to do this to help the TAs and Graders grade efficiently. 
-    * *Timing:* Your timestamp is based on the upload time; time spent tagging will **not** make your submission late. We reserve the right to deduct points for untagged pages.
+    * *Timing:* Your timestamp is based on the upload time; time spent tagging will **not** make your submission late. We reserve the right to **deduct points** for untagged pages.
 * **Single File Only:** Submit only **one** PDF file.
 * **Digital or Handwritten:** Many students type work in MS Word or Google Docs and convert to PDF.
     * If handwritten, use a scanning app like **CamScanner** (or a campus copier) to create a PDF. 
