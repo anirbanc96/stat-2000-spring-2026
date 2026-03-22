@@ -16,7 +16,7 @@ nav_order: 1
 | | Fri 3/27 | 2, 3 | Confounding, Association vs. Causation; Histograms | [Lecture 3]() | -- |
 | **2** | Mon 3/30 | 3, 4 | Histograms (cont.); Average, Median, SD | [Lecture 4]() | -- |
 | | Wed 4/1 | 4 | 68-95% Rule, Percentiles, Boxplots, FEV Data | [Lecture 5]() | -- |
-| | Fri 4/3 | 4, 5 | Simpson's Paradox; Standard Normal Curve | [Lecture 6]() | [Homework 1](due at 11:59pm) |
+| | Fri 4/3 | 4, 5 | Simpson's Paradox; Standard Normal Curve | [Lecture 6]() | [Homework 1]()(due at 11:59pm) |
 | **3** | Mon 4/6 | 5, 8 | Normal Calc Practice; Scatterplots & Correlation | [Lecture 7]() | -- |
 | | Wed 4/8 | 8, 9 | Calculation & Properties of Correlation | [Lecture 8]() | -- |
 | | Fri 4/10 | 9 | More Properties of Correlation; Regression Line | [Lecture 9]() | -- |
