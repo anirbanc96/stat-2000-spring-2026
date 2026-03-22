@@ -1,0 +1,108 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+% Custom Colors and Section Formatting
+\definecolor{uchicago}{RGB}{128, 0, 0}
+\titleformat{\section}{\large\bfseries\color{uchicago}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\bfseries}{}{0em}{}
+\hypersetup{colorlinks=true, urlcolor=blue}
+
+\title{\textbf{STAT 20000: Elementary Statistics} \\ \large Winter 2026}
+\author{University of Chicago --- Department of Statistics}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Course Logistics}
+\begin{tabular}{ll}
+    \textbf{Instructor:} & Anirban Chatterjee (\href{mailto:anirbanc@uchicago.edu}{anirbanc@uchicago.edu}) \\
+    \textbf{Office Hours:} & TBA \\
+    \textbf{TA(s):} & Claire Tseng (\href{mailto:clairetseng@uchicago.edu}{clairetseng@uchicago.edu}) \\ & Wanyi Ling (\href{mailto:wanyiling@uchicago.edu}{wanyiling@uchicago.edu})\\
+    \textbf{TA Office Hours:} & TBA \\
+    \textbf{Course Timings:} & MWF 9:30--10:20 AM \\
+    \textbf{Course Webpage:} & \url{https://anirbanc96.github.io/stat-2000-spring-2026/}
+\end{tabular}
+
+\section{Prerequisites \& Enrollment (Should I take STAT 20000?)}
+\begin{itemize}[leftmargin=*, label=$\cdot$]
+    \item \textbf{No Prerequisite:} STAT 20000/20010 has no prerequisites.
+    \item \textbf{Intended Audience:} Non-quantitative students with no intention to take STAT 22000/23400 or further STAT courses in the future.
+    \item \textbf{General Education:} This is a General Education course, not a ``warm-up'' for STAT 22000 or 23400. You do \textbf{not} need to take this before those higher-level courses.
+    \item \textbf{AP Statistics:} If you have taken AP Statistics, you should start from STAT 22000 or higher. STAT 20000 is lower than AP Statistics.
+    \item \textbf{Credit Restrictions:} Do \textbf{NOT} take both STAT 20000 and 20010; only one may count toward the 42 credits required for graduation.
+    \item \textbf{Math Sciences Requirement:}
+    \begin{itemize}
+        \item STAT 20000, 20010, 22000 meets one of the \href{http://collegecatalog.uchicago.edu/thecollege/mathematicalsciencescore/}{general education requirements in the mathematical sciences.}
+        \item At most one of STAT 20000, 20010 and STAT 22000, can count toward the general education requirements in the mathematical sciences.
+    \end{itemize}
+    \item \textbf{More Info:} \url{http://www.stat.uchicago.edu/~yibi/IntroStat/}
+\end{itemize}
+
+\section{Course Goals \& Topics}
+Stat 20000 introduces fundamental topics using a conceptual approach with less emphasis on formal mathematics. Topics include:
+\begin{itemize}[nosep, label=$\circ$]
+    \item Design of experiments and Descriptive statistics
+    \item Correlation and simple linear regression
+    \item Chance variability (Central Limit Theorem) and Chance models
+    \item Sampling and Tests of significance
+\end{itemize}
+
+\section{Required Materials}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Textbook:} \textit{Statistics}, 4th edition, by D. Freedman, R. Pisani \& R. Purves. (Hard copy or ebook). We will cover chapters 1--6, 8--11, 13--14, 16--21, 23, 26--27, and potentially 28. 
+    \item \textbf{Calculator:} A simple calculator with square root ($\sqrt{x}$) and square ($x^2$) keys is required for all homework and exams.
+\end{itemize}
+
+\section{Grade Components}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Homework (30\%):} 1 assignment per week. Approximately 7--8 assignments. The lowest score is dropped.
+    \item \textbf{Midterm (30\%):} Friday, 4/24, in class.
+    \item \textbf{Final Exam (40\%):} In-person, per the Registrar's Office schedule. No early finals.
+\end{itemize}
+
+\section{Homework Policies}
+\subsection{Deadlines \& Grace Period}
+\begin{itemize}
+    \item \textbf{No late homework is accepted.} 
+    \item We provide a \textbf{2-hour grace period} for technical issues. Submissions 2:01 hours late will not be graded.
+    \item We drop the lowest homework score to account for missed assignments.
+\end{itemize}
+
+\subsection{Work Quality}
+\begin{itemize}
+    \item \textbf{Show your work:} A final number alone is not an acceptable answer. Work must be coherent and legible. We may deduct points for poorly presented answers.
+    \item \textbf{Conceptual Questions:} For conceptual questions, a well-articulated explanation with properly supported reasons would earn more points than answers that reach the same conclusion without proper support.
+    \item \textbf{Corrections:} You may submit updated versions before the deadline; we will grade the last pdf submitted before the deadline or within the 2-hour grace period.
+    \item \textbf{\href{https://www.gradescope.com/courses/1284418}{Gradescope}:} All homwork submissions are through \href{https://www.gradescope.com/courses/1284418}{Gradescope}. You must match pages with questions. We do not give credit for incorrect files or missing pages.
+    \begin{itemize}
+        \item Please submit homework at \url{https://www.gradescope.com/courses/1284418}.
+        \item Refer to \href{https://anirbanc96.github.io/stat-2000-spring-2026/gradescope/}{Guidelines on Submitting HW on Gradescope} for guidance.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Collaboration \& AI Policy}
+\begin{itemize}
+    \item \textbf{Collaboration:} Discussing concepts is encouraged, but you must make an honest 15-minute attempt alone first. You should acknowledge any significant help or ideas you receive from others in your paper.
+    \begin{itemize}
+    \item If a friend asks, "How did you do this part?" then...
+    \begin{itemize}
+        \item your response should be "What have you done so far?" and "Where are you stuck?"
+        \item your response should never be, "Here is how I did it."
+    \end{itemize}
+    \end{itemize}
+    \item \textbf{Independence:} \textbf{Final write-ups} and \textbf{computer work (codes/graphs)} must be done independently. Do NOT share your computer work (codes, graphs) with other students. 
+    \item \textbf{Academic Integrity:} Don't send your homework to other students. \textbf{Showing your homework to others} or \textbf{copying from others/past HW or exam solutions is prohibited} and counts as \textbf{\color{red} academic dishonesty. Any suspected instances of cheating or plagiarism will be formally reported to the College for official review, regardless of the scale of the incident.}
+    \item \textbf{AI Policy:} You can use AI to help you study. For example, you can ask AI to explain a concept or a technique, test you on a specific topic, and do grammar checking. Your goal is to understand the material and master the skill, not simply to get the correct answer. Keep in mind that you don't have access to AI during the midterm and the final exam, as they are done in person.
+\end{itemize}
+
+\section{Regrade Requests}
+Check the accuracy of your grading promptly. If you find a mistake or believe you deserve partial credit, submit a request via Gradescope. 
+Tutorial: \href{https://youtu.be/TOHCkI12mh0}{How to send a Regrade Request} (4 mins).
+
+\end{document}
