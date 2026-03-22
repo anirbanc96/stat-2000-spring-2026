@@ -4,11 +4,15 @@ title: Schedule
 permalink: index.html
 nav_order: 1
 ---
-
+<style>
+  .main-content table td, .main-content table th {
+    padding: 0.75rem 1.5rem !important; 
+  }
+</style>
 # Elementary Statistics (Winter 2026)
 
 ## Course Schedule
-{: .table-wrapper }
+
 | Week | Date | Chapters | Content | Slides | Assignments |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **1** | Mon 3/23 | 1. Controlled Experiments | Syllabus; Controlled Experiments | [Lecture 1](./assets/course-materials/Lecture-1/Lecture1.pdf) | -- |
