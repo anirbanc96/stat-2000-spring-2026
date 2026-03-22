@@ -6,7 +6,7 @@ nav_order: 1
 ---
 <style>
   .main-content table td, .main-content table th {
-    padding: 0.75rem 1.5rem !important; 
+    padding: 3rem 1.5rem !important; 
   }
 </style>
 # Elementary Statistics (Winter 2026)
