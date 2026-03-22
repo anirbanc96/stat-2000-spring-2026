@@ -11,7 +11,7 @@ nav_order: 1
 
 | Week | Date | Chapter | Content | Slides | Assignments |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **1** | Mon 3/23 | 1 | Syllabus; Controlled Experiments | [Lecture 1]() | -- |
+| **1** | Mon 3/23 | 1 | Syllabus; Controlled Experiments | [Lecture 1](./assets/course-materials/Lecture-1/Lecture1.pdf) | -- |
 | | Wed 3/25 | 1, 2 | Placebo Effects & Blinding; Observational Studies | [Lecture 2]() | -- |
 | | Fri 3/27 | 2, 3 | Confounding, Association vs. Causation; Histograms | [Lecture 3]() | -- |
 | **2** | Mon 3/30 | 3, 4 | Histograms (cont.); Average, Median, SD | [Lecture 4]() | -- |
