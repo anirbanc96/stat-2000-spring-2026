@@ -7,7 +7,7 @@ nav_order: 5
 
 We only accept online submissions of homework via Gradescope. Click the button below to upload your PDF:
 
-{: .btn .btn-blue }
+{: .btn .btn-outline }
 [Submit via Gradescope](https://www.gradescope.com/courses/1284418)
 
 ### Submission Guidelines
