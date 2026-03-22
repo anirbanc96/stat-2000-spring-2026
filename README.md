@@ -1,14 +1,10 @@
 ---
-layout: home
+layout: wide
 title: Schedule
 permalink: index.html
 nav_order: 1
 ---
-<style>
-  .main-content table td, .main-content table th {
-    padding: 0.5rem 3rem !important; 
-  }
-</style>
+
 # Elementary Statistics (Winter 2026)
 
 ## Course Schedule
