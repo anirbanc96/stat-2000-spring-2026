@@ -1,5 +1,5 @@
 ---
-layout: wide
+layout: home
 title: Schedule
 permalink: index.html
 nav_order: 1
