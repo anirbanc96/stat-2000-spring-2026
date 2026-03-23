@@ -5,7 +5,7 @@ permalink: index.html
 nav_order: 1
 ---
 
-# Elementary Statistics (Winter 2026)
+# Elementary Statistics (Spring 2026)
 
 ## Course Schedule
 
