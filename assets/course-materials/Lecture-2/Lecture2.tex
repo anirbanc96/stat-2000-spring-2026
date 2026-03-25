@@ -1,0 +1,643 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  ignorenonframetext, 10pt
+]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+%\usetheme{metropolis}
+
+
+%\setbeamercolor{normal text}{bg=white}
+%\addtobeamertemplate{frametitle}{}{\vspace{-0.5em}} % decrease
+%\setbeamersize{text margin left=5mm,text margin right=10mm}
+%\usefonttheme[onlymath]{serif}
+%\usefonttheme{professionalfonts}
+%%%%%%%%%%%%%%%%
+% Packages
+%%%%%%%%%%%%%%%%
+
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsopn}
+\usepackage{cancel}
+\usepackage{epstopdf}
+\usepackage{amsmath}  	% this permits text in eqnarray among other benefits
+\usepackage{url}		% produces hyperlinks
+\usepackage{hyperref}	% allows for color usage in tables
+\usepackage[english]{babel}
+%\usepackage[latin1]{inputenc}
+\usepackage{colortbl}	% allows for color usage in tables
+\usepackage{multirow}	% allows for rows that span multiple rows in tables
+\usepackage{color}		% this package has a variety of color options
+\usepackage{xcolor}
+\usepackage{pgf}
+\usepackage{calc}
+\usepackage{ulem}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{textcomp}
+%\usepackage[misc]{ifsym} % for the dice symbol \Cube{}
+%\usepackage{txfonts}
+%\usepackage{listings}
+%\usepackage{tikz}
+\usepackage{array}
+\usepackage{wasysym}
+\usepackage{fancyvrb}
+
+%% change fontsize of R code
+\ifdefined\Shaded
+\let\oldShaded\Shaded
+\let\endoldShaded\endShaded
+\renewenvironment{Shaded}{\footnotesize\oldShaded}{\endoldShaded}
+\fi
+%% change fontsize of output
+\let\oldverbatim\verbatim
+\let\endoldverbatim\endverbatim
+\renewenvironment{verbatim}{\footnotesize\oldverbatim}{\endoldverbatim}
+
+%%%%%%%%%%%%%%%%
+% Remove navigation symbols
+%%%%%%%%%%%%%%%%
+
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{footline}[frame number]
+
+%%%%%%%%%%%%%%%%
+% User defined colors
+%%%%%%%%%%%%%%%%
+
+\xdefinecolor{oiB}{rgb}{0.22,0.52,0.72}
+\definecolor{oiG}{rgb}{.298,.447,.114}
+\xdefinecolor{hlblue}{rgb}{0.051,0.65,1}
+\xdefinecolor{gray}{rgb}{0.5, 0.5, 0.5}
+\xdefinecolor{darkGray}{rgb}{0.3, 0.3, 0.3}
+\xdefinecolor{darkerGray}{rgb}{0.2, 0.2, 0.2}
+\xdefinecolor{rubineRed}{rgb}{0.89,0,0.30}
+\xdefinecolor{irishGreen}{rgb}{0,0.60,0}	
+\definecolor{lightGreen}{rgb}{0.387,0.581,0.148}
+
+%%%%%%%%%%%%%%%%
+% Template colors
+%%%%%%%%%%%%%%%%
+
+%\setbeamercolor*{palette primary}{fg=white,bg= oiB!80!black!90}
+%\setbeamercolor*{palette secondary}{fg=black,bg= oiB!80!black}
+%\setbeamercolor*{palette tertiary}{fg=white,bg= oiB!80!black!80}
+%\setbeamercolor*{palette quaternary}{fg=white,bg= oiB}
+%\setbeamercolor{structure}{fg= oiB}
+%\setbeamercolor{frametitle}{bg= oiB!90}
+%\setbeamertemplate{blocks}[shadow=false]
+%\setbeamersize{text margin left=2em,text margin right=2em}
+
+%\setbeamercolor{code body}{bg=gray!20!white!80,fg=black}
+
+
+%%%%%%%%%%%%%%%%
+% Get rid of fancy enumerated list bullets
+%%%%%%%%%%%%%%%%
+
+%\setbeamertemplate{enumerate items}[default]
+
+%%%%%%%%%%%%%%%%
+% Custom commands
+%%%%%%%%%%%%%%%%
+
+\newcommand{\Sum}{\sum\nolimits}
+\newcommand{\Hide}[2]{\underline{~~~\onslide<#1>{\alert{#2}}~~~}}
+\newcommand{\hide}[2]{\underline{~~\onslide<#1>{\alert{#2}}~~}}
+\newcommand{\hid}[2]{\onslide<#1>{\alert{#2}}}
+\newcommand{\code}[1]{\textcolor{blue}{\texttt{#1}}}
+
+% red
+\newcommand{\red}[1]{\textit{\textcolor{rubineRed}{#1}}}
+
+% pink
+\newcommand{\pink}[1]{\textit{\textcolor{rubineRed!90!white!50}{#1}}}
+
+% green
+\newcommand{\green}[1]{\textit{\textcolor{irishGreen}{#1}}}
+
+% orange
+\newcommand{\orange}[1]{\textit{\textcolor{orange}{#1}}}
+
+% links: webURL, webLin, appLink
+\newcommand{\webURL}[1]{\urlstyle{same}{ \textit{\textcolor{darkGray}{\url{#1}}}}}
+\newcommand{\webLink}[2]{\href{#1}{\textcolor{darkGray}{{#2}}}}
+\newcommand{\appLink}[2]{\href{#1}{\textcolor{white}{{#2}}}}
+
+% mail
+\newcommand{\mail}[1]{\href{mailto:#1}{\textit{\textcolor{darkGray}{#1}}}}
+
+% highlighting: hl, hlGr, mathhl
+\newcommand{\hl}[1]{\textit{\textcolor{hlblue}{#1}}}
+\newcommand{\hlGr}[1]{\textit{\textcolor{lightGreen}{#1}}}
+\newcommand{\mathhl}[1]{\textcolor{hlblue}{\ensuremath{#1}}}
+
+% two col: two columns
+\newenvironment{twocol}[4]{
+\begin{columns}[c]
+\column{#1\textwidth}
+#3
+\column{#2\textwidth}
+#4
+\end{columns}
+}
+
+
+
+
+
+%%%%%%%%%%%%%%%%
+% Change margin
+%%%%%%%%%%%%%%%%
+
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{\parskip}%
+}%
+\item}{\end{list}}
+
+%%%%%%%%%%%%%%%%
+% Footnote
+%%%%%%%%%%%%%%%%
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+%%%%%%%%%%%%%%%%
+% Graphics
+%%%%%%%%%%%%%%%%
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+
+
+\setbeamercolor{normal text}{bg=white}
+
+\DeclareMathOperator{\var}{var}
+\newcommand{\boxmodel}[1]{\begin{array}{|c|}#1\\[2pt]\hline\end{array}}
+\newcommand{\BXX}[2]{\begin{array}{|@{\,}c@{\,}|@{\,}c@{\,}|}\hline#1&#2\\[-1pt]\hline\end{array}}
+\newcommand{\p}{\mathrm{P}}
+\newcommand{\SE}{\mathrm{SE}}
+\newcommand{\xbar}{\overline{x}}
+\newcommand{\Xbar}{\overline{X}}
+\newcommand{\ybar}{\overline{y}}
+\newcommand{\Ybar}{\overline{Y}}
+\newcommand{\zbar}{\overline{z}}
+\newcommand{\Zbar}{\overline{Z}}
+\newcommand{\wbar}{\overline{w}}
+\newcommand{\Wbar}{\overline{W}}
+\newcommand{\vbar}{\overline{v}}
+\newcommand{\Vbar}{\overline{V}}
+\newcommand{\dbar}{\overline{d}}
+\newcommand{\Dbar}{\overline{D}}
+\newcommand{\ebar}{\overline{e}}
+\newcommand{\ehat}{\widehat{\epsilon}}
+\newcommand{\yhat}{\widehat{y}}
+\newcommand{\Yhat}{\widehat{Y}}
+\newcommand{\bhat}{\widehat{\beta}}
+\newcommand{\dl}[1]{\widehat{\delta}_{#1}}
+\newcommand{\g}[1]{\widehat{\gamma}_{#1}}
+\newcommand{\al}[1]{\widehat{\alpha}_{#1}}
+\newcommand{\Bj}{{\beta_j}}
+\newcommand{\Bp}{{\beta_p}}
+\newcommand{\Bq}{{\beta_q}}
+\renewcommand{\b}[1]{\widehat{\beta}_{#1}}
+\newcommand{\B}[1]{{\beta}_{#1}}
+\newcommand{\BETA}{{\boldsymbol\beta}}
+\newcommand{\bp}{\widehat{\beta}_p}
+\newcommand{\bq}{\widehat{\beta}_q}
+\newcommand{\bj}{\widehat{\beta}_j}
+\newcommand{\df}{\mathrm{df}}
+\DeclareMathOperator{\VIF}{VIF}
+\DeclareMathOperator{\SSE}{SSE}
+\DeclareMathOperator{\SST}{SST}
+\DeclareMathOperator{\SSR}{SSR}
+\DeclareMathOperator{\MSE}{MSE}
+\DeclareMathOperator{\MST}{MST}
+\DeclareMathOperator{\MSR}{MSR}
+\DeclareMathOperator{\RM}{RM}
+\DeclareMathOperator{\FM}{FM}
+\DeclareMathOperator{\E}{E}
+\DeclareMathOperator{\SD}{SD}
+\DeclareMathOperator{\se}{se}
+\DeclareMathOperator{\cov}{Cov}
+\DeclareMathOperator{\corr}{Corr}
+\DeclareMathOperator{\cor}{Cor}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\logit}{logit}
+\newcommand{\hsigma}{\widehat{\sigma}}
+\newcommand{\betahat}{\widehat{\beta}}
+\newcommand{\slide}{<br><br><br><br><br>}
+\newcommand{\bbeta}{\boldsymbol{\beta}}
+\newcommand{\bX}{\mathbf{X}}
+\newcommand{\bY}{\mathbf{Y}}
+\newcommand{\bH}{\mathbf{H}}
+\newcommand{\bI}{\mathbf{I}}
+\newcommand{\be}{\mathbf{e}}
+\newcommand{\pval}{\mathit{P}\mathrm{-val}}
+
+
+
+\newcommand{\vmu}{\mbox{\boldmath{$\mu$}}}
+\newcommand{\vR}{\mbox{\boldmath{$R$}}}
+\newcommand{\vpsi}{\mbox{\boldmath{$\psi$}}}
+\newcommand{\vZ}{\mbox{\boldmath{$Z$}}}
+\newcommand{\vX}{\mbox{\boldmath{$X$}}}
+\newcommand{\vY}{\mbox{\boldmath{$Y$}}}
+\newcommand{\vW}{\mbox{\boldmath{$W$}}}
+\newcommand{\vz}{\mbox{\boldmath{$z$}}}
+\newcommand{\vr}{\mbox{\boldmath{$r$}}}
+\newcommand{\vx}{\mbox{\boldmath{$x$}}}
+\newcommand{\vk}{\mbox{\boldmath{$k$}}}
+\newcommand{\vp}{\mbox{\boldmath{$p$}}}
+\newcommand{\vv}{\mbox{\boldmath{$v$}}}
+\newcommand{\vg}{\mbox{\boldmath{$g$}}}
+\newcommand{\vbeta}{\mbox{\boldmath{$\beta$}}}
+\newcommand{\vone}{\mbox{\boldmath{$1$}}}
+\newcommand{\vep}{\mbox{\boldmath{$\epsilon$}}}
+\newcommand{\veta}{\mbox{\boldmath{$\eta$}}}
+\newcommand{\vl}{\mbox{\boldmath{$l$}}}
+\newcommand{\ve}{\mbox{\boldmath{$e$}}}
+\newcommand{\va}{\mbox{\boldmath{$a$}}}
+\newcommand{\vb}{\mbox{\boldmath{$b$}}}
+\newcommand{\vPsi}{\mbox{\boldmath{$\Psi$}}}
+\DeclareMathOperator*{\V}{\mathbb{V}}
+
+
+% geometry: topsep=0pt 
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={STAT 20000 Class Meetings 2 \& 3Chapter 1-2 Experiments \& Observaitonal Studies},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{STAT 20000 Class Meetings 2 \& 3\newline Chapter 1-2 Experiments
+\& Observaitonal Studies}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}{Explanatory Variable \& Response}
+\protect\hypertarget{explanatory-variable-response}{}
+For each of the following claims, please identify the explanatory
+variable and the response
+
+\begin{enumerate}
+\tightlist
+\item
+  ``\textit{Daily Exercise Improves Mental Performance}''
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Explanatory: Daily Exercise
+  \item
+    Response: Mental Health
+  \end{itemize}
+\item
+  ``\textit{Want to lose weight? Watch more TV shows!}''
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Explanatory: Watching More TV
+  \item
+    Response: Weight Loss
+  \end{itemize}
+\item
+  ``\textit{More ice creams sales have been linked to more deaths by drowning}''
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Ice Cream Sales
+  \item
+    Count of Death by Drowning
+  \end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Association and Causation}
+\protect\hypertarget{association-and-causation}{}
+Two variables are \textbf{associated} if values of one variable tend to
+be related to values of the other variable. \bigskip
+
+Two variables have a \textbf{causal (or ``cause-and-effect'') relation},
+if changing the value of the explanatory variable influences the value
+of the response variable
+\end{frame}
+
+\begin{frame}{Should We Buy More TVs to Live Longer?}
+\protect\hypertarget{should-we-buy-more-tvs-to-live-longer}{}
+\vspace{-8pt}
+
+\begin{center}\includegraphics[width=0.8\linewidth]{ch02_24spr_files/figure-beamer/unnamed-chunk-1-1} \end{center}
+
+\vspace{-12pt}
+\Large
+
+Association does not imply causation! \scriptsize
+
+Source: \url{http://jse.amstat.org/v2n2/datasets.rossman.html} \newline
+``Televisions, Physicians, and Life Expectancy'' by Allan J.
+Rossman\newline \textit{Journal of Statistics Education} v.2, n.2 (1994)
+\end{frame}
+
+\begin{frame}{Confounding Variable}
+\protect\hypertarget{confounding-variable}{}
+\textbf{Definition}: A third variable associated with both the
+explanatory variable and the response is called a
+\hl{confounding variable}
+
+\begin{itemize}
+\item
+  A confounding variable can offer a plausible explanation for an
+  association between the explanatory and the response variables
+\item
+  \red{Whenever confounding variables are (potentially) present,
+  a causal relationship  cannot be established}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Confounding Variable}
+\protect\hypertarget{confounding-variable-1}{}
+\includegraphics[width=1\linewidth]{ch02_24spr_files/figure-beamer/unnamed-chunk-2-1}
+\end{frame}
+
+\begin{frame}{TVs and Life Expectancy}
+\protect\hypertarget{tvs-and-life-expectancy}{}
+\includegraphics[width=1\linewidth]{ch02_24spr_files/figure-beamer/unnamed-chunk-3-1}
+\end{frame}
+
+\begin{frame}{Identify a Confounding Variable (1)}
+\protect\hypertarget{identify-a-confounding-variable-1}{}
+Association: More ice creams sales have been linked to more deaths by
+drowning
+
+\includegraphics[width=1\linewidth]{ch02_24spr_files/figure-beamer/unnamed-chunk-4-1}
+\end{frame}
+
+\begin{frame}{Identify a Confounding Variable (2)}
+\protect\hypertarget{identify-a-confounding-variable-2}{}
+Association: The total amount of beef consumed and the total amount of
+pork consumed worldwide are positively related over the past 100 years
+
+\includegraphics[width=1\linewidth]{ch02_24spr_files/figure-beamer/unnamed-chunk-5-1}
+\end{frame}
+
+\begin{frame}{Identify a Confounding Variable (3)}
+\protect\hypertarget{identify-a-confounding-variable-3}{}
+Association: People with shorter hair tend to be taller.
+
+\includegraphics[width=1\linewidth]{ch02_24spr_files/figure-beamer/unnamed-chunk-6-1}
+\end{frame}
+
+\begin{frame}{Experiment v.s. Observational Study}
+\protect\hypertarget{experiment-v.s.-observational-study}{}
+An \textbf{observational study} is a study in which the researcher does
+not actively control the value of any variable, but simply observes the
+value as they naturally exist.\bigskip
+
+An \textbf{experiment} is a study in which the researcher actively
+controls one or more of the explanatory variables
+\end{frame}
+
+\begin{frame}{Observational Studies}
+\protect\hypertarget{observational-studies}{}
+\begin{itemize}
+\tightlist
+\item
+  Many studies in social science and public health are observational
+  studies.
+\item
+  Example: to study the effect of smoking on health
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Treatment group (``exposed group''): smokers;
+  \item
+    Control group: no-smokers;
+  \end{itemize}
+\item
+  Since the investigators have no control over allocation, the treatment
+  group and control group might be different in important aspects other
+  than the treatment, i.e.,\newline \textbf{there are many confounding
+  variables}.
+\end{itemize}
+
+Observational studies only established \textbf{association}, NOT
+\textbf{causation}!
+\end{frame}
+
+\begin{frame}{Randomization}
+\protect\hypertarget{randomization}{}
+How can we make sure to avoid confounding variables?
+
+\begin{center}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{|c|}\hline
+\LARGE\red{RANDOMLY} assign\\
+\LARGE values of the\\
+\LARGE explanatory variable\\\hline
+\end{tabular}
+\end{center}
+\pause
+
+\begin{itemize}
+\tightlist
+\item
+  For experiments,the explanatory variable is ``treated or not''
+\item
+  Randomly \(\neq\) Haphazardly
+\item
+  Avoid the human factor: use coin tossing/random number generation.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Controlled Experiment on Clofibrate (FPP, Ch 2, Sec 2)}
+\protect\hypertarget{controlled-experiment-on-clofibrate-fpp-ch-2-sec-2}{}
+\normalsize
+\begin{center}
+\begin{tabular}{lcc@{~~~}cc}
+& \multicolumn{2}{c}{Clofibrate} & \multicolumn{2}{c}{Placebo}\\
+\midrule
+ & Number & Deaths & Number & Deaths\\
+
+\only<2->{Adherers     & ~708 & 15\% & \only<3->{1813 & 15\%}}\\
+\only<2->{Non-adherers & ~357 & 25\% & \only<3->{~882 & 28\%}}\\
+\midrule
+Total group    & 1103 & 20\% & 2798 & 21\%
+\end{tabular}
+\end{center}
+\large
+\begin{itemize}
+\item<1-> Is Clofibrate effective?
+\item<2-> Adherers v.s. non-adherers in the treatment group\\
+      Does this mean that Clofibrate is actually effective?\bigskip\bigskip
+%\item Adhering or not is {\bf not} controlled by the
+%investigators.  So the comparison is {\bf observational}, and does not support the claim that the drug is effective.
+\item<3-> Adherers v.s. non-adherers in the control group
+\item<4-> Conclusion
+\begin{itemize}\large
+\item Clofibrate has no effect;
+\item Adherers are different from non-adherers;
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Incentive for Smoke Quitting}
+\protect\hypertarget{incentive-for-smoke-quitting}{}
+Smokers at a big company were invited to participate in a smoking
+cessation program and randomly assigned to one of two groups.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Reward Only}: subjects got a cash award if stopped smoking for
+  6 months
+\item
+  \textbf{Deposit}: subjects had to deposit some money first, could get
+  deposit back + a bonus if stopped smoking.
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{@{}r|cc|r}
+\multicolumn{1}{c}{}&\multicolumn{2}{r}{\textbf{\large Reward Only Group}} \\
+\multicolumn{1}{c}{}& Quit Smoking & Not Quit & Total\\\hline
+  Agreed to Participate & 156 & 758 & 914\\
+Declined to Participate &   3 & 100 & 103\\\hline
+Total & 159 & 858 & 1017
+\end{tabular}\\[5pt]
+\begin{tabular}{@{}r|cc|r@{}}
+\multicolumn{1}{c}{}&\multicolumn{2}{c}{\textbf{\large Deposit Group}}& \\
+\multicolumn{1}{c}{}& Quit Smoking & Not Quit & Total\\\hline
+  Agreed to Participate & 78 &  68 & 146\\
+Declined to Participate & 30 & 877 & 907\\\hline
+Total & 108 & 945 & 1053
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section}{}
+Which of the following is the correct and best conclusion of this
+experiment? Explain your choice.
+
+\begin{enumerate}
+[(a)]
+\tightlist
+\item
+  ``Reward'' is more effective than ``Deposit'' since the success rate
+  of the entire Reward-Only Group \(159/1017\approx15.6\)\% is higher
+  than that of the entire Deposit Group \(108/1053\approx10.3\)\% and
+  the two groups are divided by randomization.
+\item
+  ``Deposit'' seems more effective than ``Deposit'' since the success
+  rates among those to agree to participate in the Deposit Group
+  \(78/146\approx 53.4\%\) is higher than that for the Reward Group,
+  \(156/914\approx 17.1\%\). However, this comparison cannot establish
+  causality since people self-selected whether to participate in the
+  assigned program.
+\item
+  Same comparison as (b) but we CAN make a causal conclusion that
+  ``Deposit'' is better since this is a randomized experiment
+\item
+  Same comparison as (a) but we CANNOT make a causal conclusion that
+  ``Reward'' is better due to the huge difference between the
+  participation rates of the two groups.
+\end{enumerate}
+\end{frame}
+
+\end{document}
