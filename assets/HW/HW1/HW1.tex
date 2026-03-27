@@ -1,0 +1,111 @@
+\documentclass[11pt]{article}
+
+% ---------- Packages ----------
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
+
+% ---------- Header / Footer ----------
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{STAT 2000: Elementary Statistics}
+\rhead{Homework 1}
+\cfoot{Page \thepage\ of \pageref{LastPage}}
+
+% ---------- Custom Commands ----------
+\newcommand{\course}{STAT 2000: Elementary Statistics}
+\newcommand{\hwtitle}{Homework 1}
+\newcommand{\duedate}{Due: 11:59 pm, April 3, 2026}
+% \newcommand{\studentname}{Your Name}
+
+% ---------- Question Environment ----------
+% ---------- Question Environment with Points ----------
+\newcounter{question}
+\newenvironment{question}[2][]{
+  \refstepcounter{question}
+  \vspace{1em}
+  \noindent\textbf{Question \thequestion\ (#2 points). #1}
+}{\vspace{1em}}
+
+% Parts (a), (b), (c)
+\newenvironment{parts}{
+  \begin{enumerate}[label=(\alph*)]
+}{
+  \end{enumerate}
+}
+
+% Optional solution environment (comment out to hide solutions)
+\newenvironment{solution}{
+  \par\noindent\textit{Solution.}
+}{
+  \vspace{1em}
+}
+
+% ---------- Document ----------
+\begin{document}
+
+\begin{center}
+    {\Large \textbf{\course}}\\
+    {\large \hwtitle}\\
+    \duedate\\
+    \vspace{0.5em}
+    % \textbf{Name:} \studentname
+\end{center}
+
+\hrule
+\vspace{1em}
+
+% ---------- Questions ----------
+
+\noindent All page, section, and exercise numbers below refer to the course text \textit{Statistics}, 4th edition, by D.Freedman, R. Pisani \& R. Purves (FPP).
+
+\paragraph{Reading: }Chapter 1-2 in FPP.
+
+\paragraph{Q1 (5 points).} Go to the following news report and read the article:
+\href{https://www.latimes.com/archives/la-xpm-2008-jan-03-sci-heart3-story.html}{Study Finds Hospitals Slow to Defibrillate}. Answer the following questions based on the report:
+
+\begin{itemize}
+    \item Is the news report based on an observational study or a controlled experiment?
+    \item What are the explanatory and response variables measured in the study?
+\end{itemize}
+
+\paragraph{Q2 (9 points).} If you concluded in \textbf{Question 1} that the news report describes a controlled experiment, answer the following:
+
+\begin{itemize}
+    \item What is/are the treatment group(s)? Is there a control group?
+    \item Was the experiment randomized?
+    \item Do you think the conclusion of the news report is justified by the evidence presented? Explain briefly.
+\end{itemize}
+If you concluded that the study in \textbf{Question 1} is an observational study, answer the following:
+\begin{itemize}
+    \item What two (or more) groups are being compared?
+    \item Did the study consider any confounding variables? If so, what are they? If not, suggest potential confounding variables and explain how they could affect the observed association.
+    \item Did the news report make a causal claim or only describe an association? Do you think the conclusion of the news report is justified by the evidence presented? Explain briefly.
+\end{itemize}
+
+\paragraph{Q3 (2 points).} (FPP Chapter 2, Review Exercise 8 on p.26) Ads for ADT Security Systems claim: “...over 25\% of home burglaries occur between Memorial Day and Labor Day.”  
+Do the statistics prove that burglars go to work when other people go on vacation?  
+Answer yes or no, and explain briefly.
+
+\paragraph{Q4 (2 points).} (FPP Chapter 2, Review Exercise 5 on p.25) There is a rare neurological disease (idiopathic hypoguesia) that makes food taste bad. It is sometimes treated with zinc sulfate. One group of investigators did two randomized controlled experiments to test this treatment. In the first trial, the subjects did not know whether they were being given the zinc sulfate or a placebo. However, the doctors doing the evaluations did know. In this trial, patients on zinc sulfate improved significantly; the placebo group showed little improvement. The second trial was run double-blind: neither the subjects nor the doctors doing the evaluation were told who had been given the drug or the placebo. In the second trial, zinc sulfate had no effect. Should zinc sulfate be given to treat the disease? Answer yes or no, and explain briefly.
+
+\paragraph{Q4 (2 points).} (FPP Chapter 2, Review Exercise 6 on p.25-26) (Continues the previous exercise.) The second trial used what is called a “crossover” design. The subjects were assigned at random to one of four groups:\\
+In the first group, the subjects stayed on the placebo through the whole experiment.  
+In the second group, subjects began with the placebo, but halfway through the experiment they were switched to zinc sulfate. In the third group, subjects began on zinc sulfate but were switched to placebo. In the last group, they stayed on zinc sulfate.\\
+Subjects knew the design of the study, but were not told the group to which they were assigned. Some subjects did not improve during the first half of the experiment. In each of the four groups, these subjects showed some improvement (on average) during the second half of the experiment.\\
+How can this be explained?
+
+\paragraph{Q5 (5 points).} (FPP Chapter 2, Review Exercise 11 on p.27. For part (c), please give an alternative explanation for result if
+you think the boot camp didn’t work.)  California is evaluating a new program to rehabilitate prisoners before their release; the object is to reduce the recidivism rate — the percentage who will be back in prison within two years of release. The program involves several months of “boot camp” — military-style basic training with very strict discipline. Admission to the program is voluntary. According to a prison spokesman, “Those who complete boot camp are less likely to return to prison than other inmates.”
+
+\begin{itemize}
+\item What is the treatment group in the prison spokesman’s comparison? The control group?
+\item Is the prison spokesman’s comparison based on an observational study or a randomized controlled experiment?
+\item True or false: the data show that boot camp worked. Explain why if you think it’s true. If you think it’s false, give a potential confounding variable that can explain the observed result.
+\end{itemize}
+
+\end{document}

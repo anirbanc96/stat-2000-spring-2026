@@ -11,8 +11,8 @@ nav_order: 1
 
 | Week | Date | Chapters | Content | Slides | Assignments |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **1** | Mon 3/23 | 1. Controlled Experiments | Syllabus; Controlled Experiments | [Lecture 1](./assets/course-materials/Lecture-1/Lecture1.pdf) (pages 1-9) | -- |
-| | Wed 3/25 | 1. Controlled Experiments; 2. Observational Studies | Placebo Effects & Blinding; Observational Studies | [Lecture 1](./assets/course-materials/Lecture-1/Lecture1.pdf); [Lecture 2](./assets/course-materials/Lecture-2/Lecture2.pdf) | -- |
+| **1** | Mon 3/23 | 1. Controlled Experiments | Syllabus; Controlled Experiments | [Lecture 1](./assets/Slides/Chapter-1/Lecture1.pdf) (pages 1-9) | -- |
+| | Wed 3/25 | 1. Controlled Experiments; 2. Observational Studies | Placebo Effects & Blinding; Observational Studies | [Lecture 1](./assets/Slides/Chapter-1/Lecture1.pdf); [Lecture 2](./assets/Slides/Chapter-2/Lecture2.pdf) | -- |
 | | Fri 3/27 | 2. Observational Studies; 3. The Histogram | Confounding, Association vs. Causation; Histograms | [Lecture 3]() | -- |
 | **2** | Mon 3/30 | 3. The Histogram;  4. The Average and the Standard Deviation | Histograms (cont.); Average, Median, SD | [Lecture 4]() | -- |
 | | Wed 4/1 | 4. The Average and the Standard Deviation | 68-95% Rule, Percentiles, Boxplots, FEV Data | [Lecture 5]() | -- |
