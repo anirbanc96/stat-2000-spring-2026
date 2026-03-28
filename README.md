@@ -13,10 +13,10 @@ nav_order: 1
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **1** | Mon 3/23 | 1. Controlled Experiments | Syllabus; Controlled Experiments | [Lecture 1](./assets/Slides/Chapter-1/Lecture1.pdf) (pages 1-9) | -- |
 | | Wed 3/25 | 1. Controlled Experiments; 2. Observational Studies | Placebo Effects & Blinding; Observational Studies | [Lecture 1](./assets/Slides/Chapter-1/Lecture1.pdf); [Lecture 2](./assets/Slides/Chapter-2/Lecture2.pdf) | -- |
-| | Fri 3/27 | 2. Observational Studies; 3. The Histogram | Confounding, Association vs. Causation; Histograms | [Lecture 3]() | -- |
+| | Fri 3/27 | 2. Observational Studies; 3. The Histogram | Confounding, Association vs. Causation; Histograms | [Lecture 3]() | [HW 1](./assets/HW/HW1/HW1.pdf) (Released) |
 | **2** | Mon 3/30 | 3. The Histogram;  4. The Average and the Standard Deviation | Histograms (cont.); Average, Median, SD | [Lecture 4]() | -- |
 | | Wed 4/1 | 4. The Average and the Standard Deviation | 68-95% Rule, Percentiles, Boxplots, FEV Data | [Lecture 5]() | -- |
-| | Fri 4/3 | 4. The Average and the Standard Deviation; 5. The Normal Approximation for Data | Simpson's Paradox; Standard Normal Curve | [Lecture 6]() | [HW 1]()(due by 11:59pm) |
+| | Fri 4/3 | 4. The Average and the Standard Deviation; 5. The Normal Approximation for Data | Simpson's Paradox; Standard Normal Curve | [Lecture 6]() | [HW 1](./assets/HW/HW1/HW1.pdf)(due by 11:59pm) |
 | **3** | Mon 4/6 | 5. The Normal Approximation for Data;  8. Correlation | Normal Calc Practice; Scatterplots & Correlation | [Lecture 7]() | -- |
 | | Wed 4/8 | 8. Correlation;  9. More about Correlation | Calculation & Properties of Correlation | [Lecture 8]() | -- |
 | | Fri 4/10 | 9. More about Correlation | More Properties of Correlation; Regression Line | [Lecture 9]() | [HW 2]()(due by 11:59pm) |
