@@ -1,0 +1,29 @@
+\frametitle{How to Make a Histogram in Frequency Scale?}
+\protect\hypertarget{how-to-make-a-histogram-in-frequency-scale}{}
+How to make a histogram for \texttt{fev}, a measure of people's lung
+capacities in the \texttt{fevdata}?
+
+\begin{enumerate}
+\tightlist
+\item
+  Divide the range of values into \hl{class intervals} or \hl{bins}.
+\item
+  Count the number of values in each class interval
+\end{enumerate}
+
+\begin{center}
+\small
+\begin{tabular}{@{}l|cccccc@{}}\hline
+Interval & 0-1 & 1-2 & 2-3 & 3-4 & 4-5 & 5-6 \\\hline
+Count & 3 & 164 & 284 & 151 & 46& 6 \\  \hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Draw the histogram and label the axes (with units)
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.5\linewidth]{ch03_24spr_files/figure-beamer/fevhist0-1} \end{center}
