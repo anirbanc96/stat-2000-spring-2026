@@ -1,0 +1,14 @@
+\frametitle{}
+\protect\hypertarget{section-2}{}
+Smokers had greater lung capacities than nonsmokers on average in the
+FEV study. \red{Smoking increases one's lung capacity!?!}
+
+\begin{verbatim}
+    smoke   min    Q1 median    Q3   max     mean        sd   n
+Nonsmoker 0.791 1.920  2.465 3.048 5.793 2.566143 0.8505215 589
+   Smoker 1.694 2.795  3.169 3.751 4.872 3.276862 0.7499863  65
+\end{verbatim}
+
+\begin{center}\includegraphics[width=0.8\linewidth]{ch04B_24spr_files/figure-beamer/unnamed-chunk-10-1} \end{center}
+
+\begin{center}\includegraphics[width=0.6\linewidth]{ch04B_24spr_files/figure-beamer/unnamed-chunk-11-1} \end{center}
