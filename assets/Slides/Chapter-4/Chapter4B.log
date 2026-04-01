@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  31 MAR 2026 15:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  1 APR 2026 08:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/anirbanc/Documents/GitHub/stat-2000-spring-2026/assets/Slides/Chapter-4/ch04B_24spr
-(/Users/anirbanc/Documents/GitHub/stat-2000-spring-2026/assets/Slides/Chapter-4/ch04B_24spr.tex
+**/Users/aditya/Documents/GitHub/stat-2000-spring-2026/assets/Slides/Chapter-4/Chapter4B
+(/Users/aditya/Documents/GitHub/stat-2000-spring-2026/assets/Slides/Chapter-4/Chapter4B.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/beamer/beamer.cls
@@ -826,8 +826,8 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count379
 \l__pdf_internal_box=\box132
 )
-No file ch04B_24spr.aux.
-\openout1 = `ch04B_24spr.aux'.
+No file Chapter4B.aux.
+\openout1 = `Chapter4B.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 370.
 LaTeX Font Info:    ... okay on input line 370.
@@ -976,7 +976,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (./ch04B_24spr.nav)
+
+No file Chapter4B.nav.
+
 
 [1
 
@@ -1341,9 +1343,9 @@ Package pdftex.def Info: ch04B_24spr_files/figure-beamer/unnamed-chunk-7-1.png  
 [27
 
 ]
-\openout4 = `ch04B_24spr.vrb'.
+\openout4 = `Chapter4B.vrb'.
 
- (./ch04B_24spr.vrb
+ (./Chapter4B.vrb
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 11.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1352,9 +1354,9 @@ File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 [28
 
 ]
-\openout4 = `ch04B_24spr.vrb'.
+\openout4 = `Chapter4B.vrb'.
 
- (./ch04B_24spr.vrb
+ (./Chapter4B.vrb
 <ch04B_24spr_files/figure-beamer/unnamed-chunk-10-1.png, id=204, 963.6pt x 346.29375pt>
 File: ch04B_24spr_files/figure-beamer/unnamed-chunk-10-1.png Graphic file (type png)
 <use ch04B_24spr_files/figure-beamer/unnamed-chunk-10-1.png>
@@ -1554,30 +1556,30 @@ Overfull \hbox (2.4846pt too wide) in paragraph at lines 851--851
 
 ]
 \tf@nav=\write6
-\openout6 = `ch04B_24spr.nav'.
+\openout6 = `Chapter4B.nav'.
 
 \tf@toc=\write7
-\openout7 = `ch04B_24spr.toc'.
+\openout7 = `Chapter4B.toc'.
 
 \tf@snm=\write8
-\openout8 = `ch04B_24spr.snm'.
+\openout8 = `Chapter4B.snm'.
 
- (./ch04B_24spr.aux)
+ (./Chapter4B.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 27998 strings out of 473190
- 535722 string characters out of 5715801
- 943866 words of memory out of 5000000
- 50359 multiletter control sequences out of 15000+600000
+ 27922 strings out of 473190
+ 535045 string characters out of 5715801
+ 943860 words of memory out of 5000000
+ 50285 multiletter control sequences out of 15000+600000
  674821 words of font info for 182 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,18n,123p,1083b,506s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,18n,123p,1079b,506s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ch04B_24spr.pdf (52 pages, 663654 bytes).
+Output written on Chapter4B.pdf (52 pages, 663620 bytes).
 PDF statistics:
  462 PDF objects out of 1000 (max. 8388607)
  340 compressed objects within 4 object streams
