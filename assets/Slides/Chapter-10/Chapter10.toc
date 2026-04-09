@@ -1,0 +1,3 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {1}{Test-Retest Scenario,\newline Regression Effect, and \newline Regression Fallacy}{39}{0}{1}
+\beamer@sectionintoc {2}{There Are Two Regression Lines}{43}{0}{2}

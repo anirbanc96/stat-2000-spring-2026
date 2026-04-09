@@ -1,0 +1,6 @@
+\frametitle{Example: Auto Data (3)}
+\protect\hypertarget{example-auto-data-3}{}
+\begin{center}\includegraphics[width=0.7\linewidth]{ch09_24spr_files/figure-beamer/unnamed-chunk-7-1} \end{center}
+
+Consider car models of similar \texttt{horsepower}, are \texttt{weight}
+and \texttt{acceleration} positively or negatively correlated?
