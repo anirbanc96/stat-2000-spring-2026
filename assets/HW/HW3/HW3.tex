@@ -1,0 +1,145 @@
+\documentclass[11pt]{article}
+
+% ---------- Packages ----------
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
+
+% ---------- Header / Footer ----------
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{STAT 20000: Elementary Statistics}
+\rhead{Homework 3}
+\cfoot{Page \thepage\ of \pageref{LastPage}}
+
+% ---------- Custom Commands ----------
+\newcommand{\course}{STAT 20000: Elementary Statistics}
+\newcommand{\hwtitle}{Homework 3}
+\newcommand{\duedate}{Due: 11:59 pm, April 17, 2026}
+% \newcommand{\studentname}{Your Name}
+
+% ---------- Question Environment ----------
+% ---------- Question Environment with Points ----------
+\newcounter{question}
+\newenvironment{question}[2][]{
+  \refstepcounter{question}
+  \vspace{1em}
+  \noindent\textbf{Question \thequestion\ (#2 points). #1}
+}{\vspace{1em}}
+
+% Parts (a), (b), (c)
+\newenvironment{parts}{
+  \begin{enumerate}[label=(\alph*)]
+}{
+  \end{enumerate}
+}
+
+% Optional solution environment (comment out to hide solutions)
+\newenvironment{solution}{
+  \par\noindent\textit{Solution.}
+}{
+  \vspace{1em}
+}
+
+% ---------- Document ----------
+\begin{document}
+
+\begin{center}
+    {\Large \textbf{\course}}\\
+    {\large \hwtitle}\\
+    \duedate\\
+    \vspace{0.5em}
+    % \textbf{Name:} \studentname
+\end{center}
+
+\hrule
+\vspace{1em}
+
+% ---------- Questions ----------
+
+\noindent All page, section, and exercise numbers below refer to the course text \textit{Statistics}, 4th edition, by D.Freedman, R. Pisani \& R. Purves (FPP).
+
+\paragraph{Reading: }Chapters 5, 8 and 9 in FPP.
+
+\paragraph{Q1 (3 points).} (Chapter 5, Review Exercise 6 on p.95)
+Among applicants to one law school, the average LSAT score was about 169,
+the SD was about 9, and the highest score was 178. Did the LSAT scores
+follow the normal curve?
+
+\paragraph{Q2 (8 points)} (Chapter 5, Review Exercise 7 on p.95) Among freshmen at a certain university, scores on the Math SAT followed the normal curve, with an average of 550 and an SD of 100. Fill in the blanks; explain briefly.
+
+\begin{itemize}
+    \item [(a)] A student who scored 400 on the Math SAT was at the \underline{~~~~~~~~}th percentile of the score distribution.
+    \item [(b)] To be the 75th percentile of the distribution, a student needed a score of about \underline{~~~~~~~~} points on the Math SAT
+\end{itemize}
+
+
+\paragraph{Q3 (3 points).} (Chapter 9, Review Exercise 6 on p.154) A computer program prints out $r$ for the two data sets shown below. Is the program working correctly? Answer yes or no, and explain briefly.
+
+\medskip
+
+\noindent
+\begin{minipage}{0.45\textwidth}
+\begin{center}
+(i)
+
+\begin{tabular}{cc}
+$x$ & $y$ \\ \hline
+1 & 2 \\
+2 & 1 \\
+3 & 4 \\
+4 & 3 \\
+5 & 7 \\
+6 & 5 \\
+7 & 6 \\
+\end{tabular}
+
+\medskip
+$r = 0.8214$
+\end{center}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+\begin{center}
+(ii)
+
+\begin{tabular}{cc}
+$x$ & $y$ \\ \hline
+1 & 5 \\
+2 & 4 \\
+3 & 7 \\
+4 & 6 \\
+5 & 10 \\
+6 & 8 \\
+7 & 9 \\
+\end{tabular}
+
+\medskip
+$r = 0.7619$
+\end{center}
+\end{minipage}
+
+
+\paragraph{Q4 (3 points)} (Chapter 8, Review Exercise 3 on p.135) Suppose men always married women who were exactly 8\% shorter. What would the correlation between their heights be?
+
+\paragraph{Q5 (6 points)} (Chapter 5, Review Exercise 8 on p.95) True or false? Explain briefly.
+\begin{itemize}
+    \item[(a)] If you add 7 to each entry on a list, that adds 7 to the average.
+    \item[(b)] If you add 7 to each entry on a list, that adds 7 to the SD.
+    \item[(c)] If you double each entry on a list, that doubles the average.
+    \item[(d)] If you double each entry on a list, that doubles the SD.
+    \item[(e)] If you change the sign of each entry on a list, that changes the sign of the average.
+    \item[(f)] If you change the sign of each entry on a list, that changes the sign of the SD.
+\end{itemize}
+
+\paragraph{Q6 (2 points)} (Chapter 9, Review Exercise 11 on p.156) The Educational Testing Service computed the average Verbal SAT score for each state, as well as the average
+Math SAT score for each state. (D.C. counts as a state.) The correlation between these $51$ pairs of averages was $0.97$. Would the correlation
+between the Math SAT and the Verbal SAT—computed from the data on all
+the individuals who took the tests—be larger than $0.97$, about $0.97$, or less
+than $0.97$? Explain briefly.
+
+\end{document}
