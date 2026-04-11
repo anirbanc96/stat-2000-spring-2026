@@ -19,10 +19,10 @@ nav_order: 1
 | | Fri 4/3 | 4. The Average and the Standard Deviation; 5. The Normal Approximation for Data | Simpson's Paradox; Standard Normal Curve | [Chapter 4B](./assets/Slides/Chapter-4/Chapter4B.pdf) (pages 14-31) [Chapter 5](./assets/Slides/Chapter-5/Chapter5.pdf) (pages 1-20)  | [HW 1](./assets/HW/HW1/HW1.pdf)(due by 11:59pm) [HW 2](./assets/HW/HW2/HW2.pdf) (Released) |
 | **3** | Mon 4/6 | 5. The Normal Approximation for Data;  8. Correlation | Normal Calc Practice; Scatterplots & Correlation | [Chapter 5](./assets/Slides/Chapter-5/Chapter5.pdf) (pages 21-32) [Chapter 8](./assets/Slides/Chapter-8/Chapter8.pdf) (pages 1-12) | -- |
 | | Wed 4/8 | 8. Correlation;  9. More about Correlation | Calculation & Properties of Correlation | [Chapter 8](./assets/Slides/Chapter-8/Chapter8.pdf) (pages 12-21) [Chapter 9](./assets/Slides/Chapter-9/Chapter9.pdf) (pages 1-15) | -- |
-| | Fri 4/10 | 9. More about Correlation | More Properties of Correlation; Regression Line | [Lecture 9]() | [HW 2](./assets/HW/HW2/HW2.pdf)(due by 11:59pm) |
+| | Fri 4/10 | 9. More about Correlation | More Properties of Correlation; Regression Line | [Lecture 9]() | [HW 2](./assets/HW/HW2/HW2.pdf)(due by 11:59pm) [HW 3](./assets/HW/HW3/HW3.pdf) (Released) |
 | **4** | Mon 4/13 | 10. Regression | Regression Method & Limitations; Regression Fallacy | [Lecture 10]() | -- |
 | | Wed 4/15 | 11. The R.M.S. Error for Regression; 12. The Regression Line | The Regression Line & RMS Error | [Lecture 11]() | -- |
-| | Fri 4/17 | 11. The R.M.S. Error for Regression; 12. The Regression Line | Regression Line & RMS Error (Midterm Review) | [Lecture 12]() | [HW 3]()(due by 11:59pm) |
+| | Fri 4/17 | 11. The R.M.S. Error for Regression; 12. The Regression Line | Regression Line & RMS Error (Midterm Review) | [Lecture 12]() | [HW 3](./assets/HW/HW3/HW3.pdf) (due by 11:59pm) |
 | **5** | Mon 4/20 | 13. What Are the Chances | What Are the Chances? (Intro to Probability) | [Lecture 13]() | -- |
 | | Wed 4/22 | -- | **No Class** (Mid-term Break/Study Day) | -- | -- |
 | | Fri 4/24 | -- | **Midterm Exam** (9:30-10:20 am) | -- | -- |
