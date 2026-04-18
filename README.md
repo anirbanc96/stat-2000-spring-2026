@@ -21,8 +21,8 @@ nav_order: 1
 | | Wed 4/8 | 8. Correlation;  9. More about Correlation | Calculation & Properties of Correlation | [Chapter 8](./assets/Slides/Chapter-8/Chapter8.pdf) (pages 12-21) [Chapter 9](./assets/Slides/Chapter-9/Chapter9.pdf) (pages 1-15) | -- |
 | | Fri 4/10 | 9. More about Correlation | More Properties of Correlation; Regression Line | [Chapter 9](./assets/Slides/Chapter-9/Chapter9.pdf) (pages 15-25) [Chapter 10](./assets/Slides/Chapter-10/Chapter10.pdf) (pages 1-16) | [HW 2](./assets/HW/HW2/HW2.pdf)(due by 11:59pm) [HW 3](./assets/HW/HW3/HW3.pdf) (Released) |
 | **4** | Mon 4/13 | 10. Regression | Regression Method & Limitations; Regression Fallacy | [Chapter 10](./assets/Slides/Chapter-10/Chapter10.pdf) (pages 16-31) [Chapter 11](./assets/Slides/Chapter-11/Chapter11.pdf) (pages 1-10) | -- |
-| | Wed 4/15 | 11. The R.M.S. Error for Regression; 12. The Regression Line | The Regression Line & RMS Error | [Lecture 11]() | -- |
-| | Fri 4/17 | 11. The R.M.S. Error for Regression; 12. The Regression Line | Regression Line & RMS Error (Midterm Review) | [Lecture 12]() | [HW 3](./assets/HW/HW3/HW3.pdf) (due by 11:59pm) |
+| | Wed 4/15 | 11. The R.M.S. Error for Regression; 12. The Regression Line | The Regression Line & RMS Error | [Chapter 11](./assets/Slides/Chapter-11/Chapter11.pdf) (pages 10-33) | -- |
+| | Fri 4/17 | 11. The R.M.S. Error for Regression; 12. The Regression Line | Regression Line & RMS Error (Midterm Review) | Midterm Review | [HW 3](./assets/HW/HW3/HW3.pdf) (due by 11:59pm) |
 | **5** | Mon 4/20 | 13. What Are the Chances | What Are the Chances? (Intro to Probability) | [Lecture 13]() | -- |
 | | Wed 4/22 | -- | **No Class** (Mid-term Break/Study Day) | -- | -- |
 | | Fri 4/24 | -- | **Midterm Exam** (9:30-10:20 am) | -- | -- |
