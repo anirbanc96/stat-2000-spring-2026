@@ -23,7 +23,7 @@ nav_order: 1
 | **4** | Mon 4/13 | 10. Regression | Regression Method & Limitations; Regression Fallacy | [Chapter 10](./assets/Slides/Chapter-10/Chapter10.pdf) (pages 16-31) [Chapter 11](./assets/Slides/Chapter-11/Chapter11.pdf) (pages 1-10) | -- |
 | | Wed 4/15 | 11. The R.M.S. Error for Regression; 12. The Regression Line | The Regression Line & RMS Error | [Chapter 11](./assets/Slides/Chapter-11/Chapter11.pdf) (pages 10-33) | -- |
 | | Fri 4/17 | 11. The R.M.S. Error for Regression; 12. The Regression Line | Regression Line & RMS Error (Midterm Review) | Midterm Review | [HW 3](./assets/HW/HW3/HW3.pdf) (due by 11:59pm) |
-| **5** | Mon 4/20 | 13. What Are the Chances | What Are the Chances? (Intro to Probability) | [Lecture 13]() | -- |
+| **5** | Mon 4/20 | 13. What Are the Chances | What Are the Chances? (Intro to Probability) | [Chapter 13](./assets/Slides/Chapter-13/Chapter13.pdf) | -- |
 | | Wed 4/22 | -- | **No Class** (Mid-term Break/Study Day) | -- | -- |
 | | Fri 4/24 | -- | **Midterm Exam** (9:30-10:20 am) | -- | -- |
 | **6** | Mon 4/27 | 14. More about Chance | More About Chances | [Lecture 14]() | -- |
