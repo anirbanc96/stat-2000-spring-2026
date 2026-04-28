@@ -38,5 +38,5 @@ nav_order: 1
 | **9** | Mon 5/18 | 26. Tests of Significance | Test of Significance, Part 2 | [Lecture 23]() | -- |
 | | Wed 5/20 | 26. Tests of Significance; 27. More Tests for Averages | Ch 26 Exercises; Two-Sample Comparisons | [Lecture 24]() | -- |
 | | Fri 5/22 | 27. More Tests for Averages | Two-Sample Comparisons & Final Review | [Lecture 25]() | [HW 7]()(due by 11:59pm) |
-| **10** | Mon 5/25 | -- | **Final Review / Final Exam** | -- | -- |
+| **10** | Mon 5/28 | -- | **Final Exam** (Eckhart Hall 133, 8-10 am) | -- | -- |
 
