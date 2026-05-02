@@ -26,8 +26,8 @@ nav_order: 1
 | **5** | Mon 4/20 | 13. What Are the Chances | What Are the Chances? (Intro to Probability) | [Chapter 13](./assets/Slides/Chapter-13/Chapter13.pdf) (pages 1-17) | -- |
 | | Wed 4/22 | -- | [**Practice Midterm**](./assets/Practice_Exams/Practice_Midterm.pdf) Discussions  | -- | -- |
 | | Fri 4/24 | -- | **Midterm Exam** (9:30-10:20 am) | -- | -- |
-| **6** | Mon 4/27 | 14. More about Chance | More About Chances | [Lecture 14]() | -- |
-| | Wed 4/29 | 16. The Law of Averages | Box Models; Expected Value of Sum of Draws | [Lecture 15]() | -- |
+| **6** | Mon 4/27 | 14. More about Chance | More About Chances | [Chapter 13](./assets/Slides/Chapter-13/Chapter13.pdf) (pages 18-26) [Chapter 14](./assets/Slides/Chapter-14/Chapter14.pdf) (pages 1-16) | -- |
+| | Wed 4/29 | 16. The Law of Averages | Box Models; Expected Value of Sum of Draws | [Chapter 14](./assets/Slides/Chapter-14/Chapter14.pdf) (pages 16-19) [Chapter 16](./assets/Slides/Chapter-16/Chapter16.pdf) (pages 1-14) | -- |
 | | Fri 5/1 | 17. The Expected Value and Standard Error | Expected Value & SE of Box Models; Law of Large Numbers | [Lecture 16]() | [HW 4]()(due by 11:59pm) |
 | **7** | Mon 5/4 | 18. The Normal Approximation for Probability Histograms | Normal Approximation for Probability Histograms | [Lecture 17]() | -- |
 | | Wed 5/6 | 19. Sample Surveys | Sample Surveys | [Lecture 18]() | -- |
