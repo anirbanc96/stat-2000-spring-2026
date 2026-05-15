@@ -26,15 +26,15 @@ nav_order: 1
 | **5** | Mon 4/20 | 13. What Are the Chances | What Are the Chances? (Intro to Probability) | [Chapter 13](./assets/Slides/Chapter-13/Chapter13.pdf) (pages 1-17) | -- |
 | | Wed 4/22 | -- | [**Practice Midterm**](./assets/Practice_Exams/Practice_Midterm.pdf) Discussions  | -- | -- |
 | | Fri 4/24 | -- | **Midterm Exam** (9:30-10:20 am) | -- | -- |
-| **6** | Mon 4/27 | 14. More about Chance | More About Chances | [Lecture 14]() | -- |
-| | Wed 4/29 | 16. The Law of Averages | Box Models; Expected Value of Sum of Draws | [Lecture 15]() | -- |
-| | Fri 5/1 | 17. The Expected Value and Standard Error | Expected Value & SE of Box Models; Law of Large Numbers | [Lecture 16]() | [HW 4]()(due by 11:59pm) |
-| **7** | Mon 5/4 | 18. The Normal Approximation for Probability Histograms | Normal Approximation for Probability Histograms | [Lecture 17]() | -- |
-| | Wed 5/6 | 19. Sample Surveys | Sample Surveys | [Lecture 18]() | -- |
-| | Fri 5/8 | 20. Chance Errors in Sampling | Chance Errors in Sampling | [Lecture 19]() | [HW 5]()(due by 11:59pm) |
-| **8** | Mon 5/11 | 21. The Accuracy of Percentages | Accuracy of Percentages (Confidence Intervals) | [Lecture 20]() | -- |
-| | Wed 5/13 | 23. The Accuracy of Averages | Accuracy of Averages (Confidence Intervals); Quiz | [Lecture 21]() | -- |
-| | Fri 5/15 | 26. Tests of Significance | Tests of Significance (p-values) | [Lecture 22]() | [HW 6]()(due by 11:59pm) |
+| **6** | Mon 4/27 | 14. More about Chance | More About Chances | [Chapter 13](./assets/Slides/Chapter-13/Chapter13.pdf) (pages 18-26) [Chapter 14](./assets/Slides/Chapter-14/Chapter14.pdf) (pages 1-16) | -- |
+| | Wed 4/29 | 16. The Law of Averages | Box Models; Expected Value of Sum of Draws | [Chapter 14](./assets/Slides/Chapter-14/Chapter14.pdf) (pages 16-19) [Chapter 16](./assets/Slides/Chapter-16/Chapter16.pdf) (pages 1-14) | -- |
+| | Fri 5/1 | 17. The Expected Value and Standard Error | Expected Value & SE of Box Models; Law of Large Numbers | [Chapter 17](./assets/Slides/Chapter-17_18/Chapter_17_18.pdf) | [HW 4](./assets/HW/HW4/HW4.pdf)(due by 11:59pm) |
+| **7** | Mon 5/4 | 18. The Normal Approximation for Probability Histograms | Normal Approximation for Probability Histograms | [Chapter 18](./assets/Slides/Chapter-17_18/Chapter_17_18.pdf) | -- |
+| | Wed 5/6 | 19. Sample Surveys | Sample Surveys | [Chapter 19](./assets/Slides/Chapter-19/Chapter19.pdf) [Chapter 20](./assets/Slides/Chapter-20/Chapter20.pdf) | -- |
+| | Fri 5/8 | 20. Chance Errors in Sampling | Chance Errors in Sampling | [Chapter 20](./assets/Slides/Chapter-20/Chapter20.pdf) [Chapter 21](./assets/Slides/Chapter-21/Chapter21.pdf) | [HW 5](./assets/HW/HW5/HW5.pdf) (Released) |
+| **8** | Mon 5/11 | 21. The Accuracy of Percentages | Accuracy of Percentages (Confidence Intervals) | [Chapter 21](./assets/Slides/Chapter-21/Chapter21.pdf) | -- |
+| | Wed 5/13 | 23. The Accuracy of Averages | Accuracy of Averages (Confidence Intervals) | [Chapter 23](./assets/Slides/Chapter-23/Chapter23.pdf) | -- |
+| | Fri 5/15 | 26. Tests of Significance | Tests of Significance (p-values) | [Chapter 26](./assets/Slides/Chapter-26/Chapter26_v1.pdf) [Chapter 26 Examples](./assets/Slides/Chapter-26/Chapter26_v2.pdf) | [HW 6]()(due by 11:59pm) |
 | **9** | Mon 5/18 | 26. Tests of Significance | Test of Significance, Part 2 | [Lecture 23]() | -- |
 | | Wed 5/20 | 26. Tests of Significance; 27. More Tests for Averages | Ch 26 Exercises; Two-Sample Comparisons | [Lecture 24]() | -- |
 | | Fri 5/22 | 27. More Tests for Averages | Two-Sample Comparisons & Final Review | [Lecture 25]() | [HW 7]()(due by 11:59pm) |
