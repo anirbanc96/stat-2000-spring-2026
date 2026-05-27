@@ -35,8 +35,8 @@ nav_order: 1
 | **8** | Mon 5/11 | 21. The Accuracy of Percentages | Accuracy of Percentages (Confidence Intervals) | [Chapter 21](./assets/Slides/Chapter-21/Chapter21.pdf) | -- |
 | | Wed 5/13 | 23. The Accuracy of Averages | Accuracy of Averages (Confidence Intervals) | [Chapter 23](./assets/Slides/Chapter-23/Chapter23.pdf) | -- |
 | | Fri 5/15 | 26. Tests of Significance | Tests of Significance (p-values) | [Chapter 26](./assets/Slides/Chapter-26/Chapter26_v1.pdf) [Chapter 26 Examples](./assets/Slides/Chapter-26/Chapter26_v2.pdf) | [HW 6]()(due by 11:59pm) |
-| **9** | Mon 5/18 | 26. Tests of Significance | Test of Significance, Part 2 | [Lecture 23]() | -- |
-| | Wed 5/20 | 26. Tests of Significance; 27. More Tests for Averages | Ch 26 Exercises; Two-Sample Comparisons | [Lecture 24]() | -- |
-| | Fri 5/22 | 27. More Tests for Averages | Two-Sample Comparisons & Final Review | [Lecture 25]() | [HW 7]()(due by 11:59pm) |
+| **9** | Mon 5/18 | 27. More Tests for Averages | Test of Significance, Part 2 | [Chapter 27](./assets/Slides/Chapter-27/Chapter27.pdf) | -- |
+| | Wed 5/20 | No Class  | -- | -- | -- |
+| | Fri 5/22 | Final Review | -- | -- | -- |
 | **10** | Mon 5/28 | -- | **Final Exam** (Eckhart Hall 133, 8-10 am) | -- | -- |
 
